@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto; /* y direction me scroll krna h */
+    overflow-x: hidden; /* x direction me scroll ni krna h*/
+}
+.container{
+    margin: 0 auto; /* container centre me lie kre*/
+    width: 1200px;
+}
+.navbar{
+    /*sari ki sari chize straight line me chahiye*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* isse values center me ayegi*/
+    padding-top: 1rem;
+
+    
+}
+.logo-container{
+    display: flex;
+    justify-content: baseline; /* jab bde letter aur small letter sath sath lane ho
+                              to baseline ka use  krte h*/
+    align-items: center;
+    
+}
+.logo-container img{
+    height: 33px;
+    width: 22px;
+}
+.logo-text{
+    margin-left:0.3rem;
+    font-size: 28px;
+}
+.nav-item{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+}
+.nav-item div{
+    font-size: 20px;
+    font-weight: 5px;
+    cursor: pointer; /* ye arrow ko hand me change kr deta h*/
+}
+.nav-item  div a{
+      color: black;
+      
+}
+/*text decoration ko htane ke liye none kr dete h*/
+a{
+    text-decoration: none;
+}
+.nav-item div:hover{
+    font-weight: bold ; /*hover ke bad bold ho jana chahiye*/
+    transition: all 0.8s;
+}
+/*absolute ka parent relative hona chaiye*/
+
